@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to img-to-pdf 👋</h1>
+<h1 align="center">Welcome to image-to-pdf 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
@@ -7,15 +7,15 @@
 
 ## Instalation
 ```sh
-npm install img-to-pdf
+npm install image-to-pdf
 # OR
-yarn add img-to-pdf
+yarn add image-to-pdf
 ```
 
 ## Example
 ```js
 const fs = require('fs');
-const imgToPDF = require('./main');
+const imgToPDF = require('image-to-pdf');
 
 const pages = [
    "pages/1.png",
