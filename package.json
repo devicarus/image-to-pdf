@@ -13,6 +13,6 @@
   "main": "main.js",
   "license": "ISC",
   "dependencies": {
-    "pdfkit": "^0.11.0"
+    "pdfkit": "^0.13.0"
   }
 }
