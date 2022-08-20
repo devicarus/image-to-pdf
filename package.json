@@ -1,14 +1,19 @@
 {
   "name": "image-to-pdf",
   "version": "1.0.0",
-  "description": "Creates a PDF file out of images",
+  "description": "A simple image to PDF converter",
+  "author": {
+    "name": "devicarus",
+    "email": "devicarus@icloud.com",
+    "url": "https://github.com/devicarus"
+  },
   "keywords": [
     "pdf",
     "image"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DEVICARUS/image-to-pdf.git"
+    "url": "https://github.com/devicarus/image-to-pdf.git"
   },
   "main": "main.js",
   "license": "ISC",
