@@ -1,7 +1,7 @@
 on:
   push:
-    branches: 
-      - "master"
+    tags:
+      - "v*.*.*"
 
 jobs:
   publish:
@@ -13,6 +13,7 @@ jobs:
           node-version: "20"
       - run: npm install
       - run: npm run build
+      - uses: softprops/action-gh-release@v2
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
