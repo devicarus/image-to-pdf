@@ -31,8 +31,8 @@
     }
   },
   "scripts": {
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\": \"module\"}' > dist/esm/package.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
     "build": "npm run build:esm && npm run build:cjs"
   },
   "license": "ISC",
