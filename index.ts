@@ -1,7 +1,7 @@
 import PDFDocument from 'pdfkit'
 
-    const doc: PDFKit.PDFDocument = new PDFDocument({ margin: 0, size })
 const imageToPDF = (pages: (string | Buffer)[], size: PDFKit.PDFDocumentOptions['size']): PDFKit.PDFDocument => {
+  const doc: PDFKit.PDFDocument = new PDFDocument({ margin: 0, size })
 
 	for (let index: number = 0; index < pages.length; index++) {
 		if (index != 0) doc.addPage()
@@ -12,9 +12,9 @@ const imageToPDF = (pages: (string | Buffer)[], size: PDFKit.PDFDocumentOptions[
 		})
 	}
 
-    doc.end()
+  doc.end()
 
-    return doc
+  return doc
 };
 
 export default imageToPDF
