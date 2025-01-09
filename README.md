@@ -56,7 +56,7 @@ imageToPDF(pages, 'A4').pipe(fs.createWriteStream('output-ts.pdf'));
 The only accepted image formats are `png` and `jpeg`. They can be passed to the function as `base64`, `Buffer` or simply as a path to the file (see [Example](#example)).
 
 ### Page size
-A list of all size presets in `sizes` can be found [here](sizes.json). A custom size can be passed to the function simply as `[x, y]`.
+A list of all size presets in `sizes` can be found [here](https://github.com/devicarus/image-to-pdf/blob/master/index.ts#L21). A custom size can be passed to the function simply as `[x, y]`.
 
 ### Output
 The function returns a `Stream` (see [official documentation](https://nodejs.org/api/stream.html)). The easiest way to get a file is to `pipe` it into a `WriteStream` (see [Example](#example)).
